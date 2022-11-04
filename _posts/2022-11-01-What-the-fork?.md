@@ -11,7 +11,7 @@ date: '2022-11-02 00:00:00 +0000'
 
 This article focuses on calculating the total number of proccesses in a code that uses fork(). But first lets describe fork briefly.
 
-In an operating system, particularly in the context of the Unix operating system, the term **fork**, or the function `fork`, is an operation where a process creates a copy of itself in order to start the execution of a different process. This copy, known as "child process", then calls the `exec` system call to overlay itself with the other program, basically ending execution of former program in favor of the other. The fork operation creates a **seperate** address space for the child, but the child has an exact copy of all the memory segments of the parent process. In short, fork allows user procceses to start other proccess while running. 
+In an operating system, particularly in the context of the Unix operating system, the term **fork**, or the function `fork`, is an operation where a process creates a copy of itself in order to start the execution of a different process. This copy, known as "child process", then calls the `exec` system call to overlay itself with the other program, basically ending execution of former program in favor of the other. The fork operation creates a **seperate** address space for the child, but the child has an exact copy of all the memory segments of the parent process[^1]. In short, fork allows user procceses to start other proccess while running. 
 
 ## How to Fork?
 The fork function is quite simple, here is a "Hello World" of forking. 
@@ -101,7 +101,7 @@ The child creation process can be broken down as such, where the P0 represents t
 
 ![](../../assets/img/posts/fork2.png)
 
-Wait, why add `wait(NULL)`?  This is because the parent process is finished by the time the child asks for its parents pid. When a process is finished, all its children are reassigned as children of the initial proccess, which has a pid of 1. Thus, we must use [`wait()`](https://linux.die.net/man/2/wait) in the paren'ts code to wait for the child to execute. If we didn't use it, we would have gotten something like this
+Wait, why add `wait(NULL)`?  This is because the parent process is finished by the time the child asks for its parents pid. When a process is finished, all its children are reassigned as children of the init process, which has a pid of 1. Thus, we must use [`wait()`](https://linux.die.net/man/2/wait) in the paren'ts code to wait for the child to execute. This type of child process is known as "orphan processes". If we didn't use it, we would have gotten something like this
 
 ```console
 Child Process i=0, pid=13546, parent pid=13545
@@ -133,3 +133,9 @@ int main() {
 Answer in the comments!
 
 ## Related Sources
+- [Orphan and Zombie Process](https://www.scaler.com/topics/operating-system/zombie-and-orphan-process-in-os/)
+- [fork(), vfork(), exec(), clone()](https://stackoverflow.com/questions/4856255/the-difference-between-fork-vfork-exec-and-clone)
+
+## Footnotes
+
+[^1]: This is before good memory management, now, it doesn't copy the memory, instead, it is simply set on (copy on write)

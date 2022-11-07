@@ -3,7 +3,7 @@ layout: post
 title: "What the fork?"
 categories:
     - Notes
-    - Operating Systems
+    - Operating System
 tags:
     - cpp
 date: '2022-11-02 00:00:00 +0000'

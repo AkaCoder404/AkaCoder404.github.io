@@ -19,7 +19,7 @@ I have an obsession with setting up the perfert workflow, and part of that workf
 
 ## Google Docs
 ### *What drawed me in?*
-[Google Docs](google-docs) allows you to "create, edit, and collaborate on online documents". I guess I can't say I was "drawn" into google notes, instead, it was the de-facto note taking device throughout Highschool. I would take notes with it with my friends, and I could access those notes wherever. It was simple to use.
+[Google Docs](https://docs.google.com) allows you to "create, edit, and collaborate on online documents". I guess I can't say I was "drawn" into google notes, instead, it was the de-facto note taking device throughout Highschool. I would take notes with it with my friends, and I could access those notes wherever. It was simple to use.
 
 ### *Why do I no longer use Google Docs?*
 There are a few reasons. The first one is its document management system. I believe that a good note taking workflow should allows you to manage a lot of files, and be able to transition between multiple files, as well as view multiple documents at once. It quickly becomes unmanageble. Secondly, I no longer needed to "collaborate on online" documents. A large portion of my notes were for myself, and I didn't like that accessing notes required a good internet connection. So I started to stray away from "oneline" note taking applications, and moved toward notes that could be stored locally.
@@ -32,7 +32,7 @@ There are a few reasons. The first one is its document management system. I beli
 ![](https://s2.loli.net/2022/11/07/eKO9a42tclYGgoQ.png)
 
 ### *What drawed me in?*
-[Notion](notion) describes itself as in "all-in-one workspace for your notes, task, wikis, and database". What drawed me in to trying Notion was is customization. Just looking at [templates](notion-templates) offered by notion themselves, and notion templates designed by other users, its hard not to be attracted by its pretty UI and large array of features. I loved tinkering with its database management features. Notion can create dynamic, interconnected notes, having complex interactive block elements, ranging from calendars, tables, and lists. I also like its ability to share notes quickly by sharing a link, yet still saves notes locally. I have used Notion in highschool and tried picking it up again in college, but soon found it a hassle to use it after a couple weeks both times.
+[Notion](https://www.notion.so/) describes itself as in "all-in-one workspace for your notes, task, wikis, and database". What drawed me in to trying Notion was is customization. Just looking at [templates](https://www.notion.so/templates/notions-projects) offered by notion themselves, and notion templates designed by other users, its hard not to be attracted by its pretty UI and large array of features. I loved tinkering with its database management features. Notion can create dynamic, interconnected notes, having complex interactive block elements, ranging from calendars, tables, and lists. I also like its ability to share notes quickly by sharing a link, yet still saves notes locally. I have used Notion in highschool and tried picking it up again in college, but soon found it a hassle to use it after a couple weeks both times.
 
 ### *Why do I no longer use Notion?*
 Every advantage has a liabiltiy, and I think that's what drove me away from Notion. Notion is extremely customizable, and I think one would have to experience it for themselves to understand. But, for a note taking device, I think it was *too* customizable. I often found myself spending a lot of time configuring my notes, even for a single page, perhaps because of my procastination superpower, but also because of the enourmous set of features it offered (most of which I never got to use). And, I spent a lot of time trying to create a "pretty" note, or setting Notion up to replace other applications (such as task mangement, todo list, or calendar). Perhaps its simply a steep learning curve, but to me, creating the perfect note taking workflow isn't about creating the most elegant notes, its about what you want to write notes. Both times I stopped using Notion was because of these extra, non essential features. 
@@ -42,17 +42,17 @@ Another thing is about its bloated UI. To me, I like my notes compact, and I jus
 In short, Notion offers too much for me.
 
 ### *Other applications similar to Notion*
-- [Evernote](ever-note)
+- [Evernote](https://evernote.com/)
 
 ## Typora
 ![](https://s2.loli.net/2022/11/07/wmGrkbR8caN4Pet.png) 
 ### *What drawed me in?*
-One word, [Markdown](markdown). I was first introduced into markdown as I began my programming journey. I instantly fell in love with it. It's simplicty is exactly what I wanted in note taking. Compared to the likes of Microsoft Word or Google Docs, [Typora](typora) minmalist writing editor format, and markdown's simple syntax is the perfect combination. 
+One word, [Markdown](https://www.markdownguide.org). I was first introduced into markdown as I began my programming journey. I instantly fell in love with it. It's simplicty is exactly what I wanted in note taking. Compared to the likes of Microsoft Word or Google Docs, [Typora](https://typora.io/) minmalist writing editor format, and markdown's simple syntax is the perfect combination. 
 
 Typora has everything you need in a simplistic note taking application. No uncessary formating, no complex features, just note taking. It isnt to say typora isn't powerful. It supports HTML, latex, and themes. Yeah, you can do basically anything. It also has a folder view, in which you can quickly switch between files without using an file explorer.
 
 ### *Why do I no longer use Typora?*
-There are three main reasons. First, the paywall. In beta mode, typora was free, but, then in November 23rd, 2021, its official version came out, but with a steep cost. The second is its file management system. It is better than google docs, allowing you to view files in the current folder that you are working in, but you have to implement this hiearchy of notes manually. This leads into my last reason. Notes shouldn't be confined to this strict hierarchy. Notes should be intertwined, easily reused, and easily accessible. But at the time, that was the only method I knew, until I came across [Obsidian](obsidian).
+There are three main reasons. First, the paywall. In beta mode, typora was free, but, then in November 23rd, 2021, its official version came out, but with a steep cost. The second is its file management system. It is better than google docs, allowing you to view files in the current folder that you are working in, but you have to implement this hiearchy of notes manually. This leads into my last reason. Notes shouldn't be confined to this strict hierarchy. Notes should be intertwined, easily reused, and easily accessible. But at the time, that was the only method I knew, until I came across [Obsidian](https://obsidian.md/).
 
 ## One-Note
 ![](https://s2.loli.net/2022/11/07/LGxC3qByc6paYHw.png)
@@ -68,18 +68,18 @@ I simply found this style of note taking too messy in the long run. But, I did l
 As I switched from a Surface to and iPad in college, this became my daily driver for handwritten notes. For me, electronic handwritten notes have one advantage over traditional pen and paper, which is its ability to erase easily, and create colored visualization. For math/physics related homework, I found this aspect extremely helpful for handwritten homework submissions and to use as scratchwork. Using it to view and annotate pdfs was simple too. Like OneNote, you could use it to create small visualizations/diagrams. 
 
 ### *Why do I no longer use Notability?*
-As far as electronic handwriting technology has improved, I still prefered using pen and paper to take notes, scratchwork, etc. I simply found myself using the iPad and Notability less and less. Thus, I sold my iPad, and returned to traditional note taking. For diagrams, I began to use [Excalidraw](excalidraw). 
+As far as electronic handwriting technology has improved, I still prefered using pen and paper to take notes, scratchwork, etc. I simply found myself using the iPad and Notability less and less. Thus, I sold my iPad, and returned to traditional note taking. For diagrams, I began to use [Excalidraw](https://excalidraw.com). 
 
 # Workflow in 2022
 So what do I use now? I actually use a combination of applications to take my notes, including
-- [Obsidian](obsidian)
+- [Obsidian](https://obsidian.md/)
 - Apple Notes
-- [Visual Studio Code](vscode)
-- [Excalidraw](excalidraw)
+- [Visual Studio Code](https://code.visualstudio.com)
+- [Excalidraw](https://excalidraw.com)
 
 ## Obsidian
 ![](https://s2.loli.net/2022/11/07/euS75UZHzQBFTxb.png)
-[Obsidian](obsidian) advertises itself as a "powerful knowledge base on top of a local folder" of markdown files. It claims to be a "second brain", organizing notes in a non-linear fasion, where all ideas and concepts are interconnected through backlinks. Notes can be written and easily reused. Obsidian covers almost all the disadvantages that I listed above, and yet it is still extremely simple at its core. Here are the reasons why I like obsidian.
+[Obsidian](https://obsidian.md/) advertises itself as a "powerful knowledge base on top of a local folder" of markdown files. It claims to be a "second brain", organizing notes in a non-linear fasion, where all ideas and concepts are interconnected through backlinks. Notes can be written and easily reused. Obsidian covers almost all the disadvantages that I listed above, and yet it is still extremely simple at its core. Here are the reasons why I like obsidian.
 ### Local, Centralized File Storage
 All notes are stored in a "vault", in which you can have many, but I use one. All my notes are stored here, and stored locally. The app allows you to open and search for any note inside the application, which makes switching between notes extremely easily. It supports tabs, allowing you to view notes side by side if required. Yet, since all apps are stored in a central location, syncing this vault, which is essentially a giant folder, is quite easy. There are a lot of applications that allow you to sync automatically. 
 ### Markdown
@@ -102,7 +102,7 @@ If you would like to see which plugins I currently use as well as my favorite th
 
 ## Vscode
 ![](https://s2.loli.net/2022/11/07/VqUEKI2xzRuDJBh.png)
-So why would I include [Visual Studio Code](vscode), a well known IDE for programmers, as a note taking device? Well, thats just it, I am a programmer, and that vscode can be seen as a glorified text editor. 
+So why would I include [Visual Studio Code](https://code.visualstudio.com), a well known IDE for programmers, as a note taking device? Well, thats just it, I am a programmer, and that vscode can be seen as a glorified text editor. 
 
 A good programmer needs to practice writing code. And with obsidian, you simply can't do that. Thus, I often have visual studio open, writing and testing code as I learn new topics and concepts. Thus, sometimes, it is more practical to write my notes directly into a coding file as comments, instead of migrating the code into Obsidian, and adding notes there. If I need to write documentation or reports for programming projects, then I would definitely do it directly in vscode. In fact, I am writing this blog in vscode :). However, I still prefer to take general notes in obsidian mainly because of two reasons. Firstly, I still prefer obsidian's file linking and file switching for note taking. Secondly, Obsidian's live preview. In vscode, in order to preview your markdown file, you have to open two tabs, one for the source and one for the preview, kind of like this.
 ![](https://s2.loli.net/2022/11/07/Us2HJgrF3R8KfPh.png)

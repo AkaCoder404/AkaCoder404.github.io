@@ -53,10 +53,10 @@ How many times is hello world printed?
 int main () {
     fork();
     fork();
-    print("Hello World");
+    print("Hello World\n");
 }
 ```
-Twice!
+Four times!
 
 ### Problem 2
 How many child processes are created by fork? Try drawing the relationship between the proccesses.

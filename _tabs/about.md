@@ -21,6 +21,10 @@ I want to work on software that will help others.
 ## Platforms
 You can find me on the following platforms!
 
+[![Github](https://img.shields.io/badge/dynamic/json?label=GitHub%20Followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dakacoder404&labelColor=282c34&color=181717&logo=github&longCache=true)](https://github.com/AkaCoder404)
+[![Netease](https://img.shields.io/badge/dynamic/json?label=%E7%BD%91%E6%98%93%E4%BA%91&query=%24.data.totalSubs&suffix=%20%E7%B2%89%E4%B8%9D&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DneteaseMusic%26queryKey%3D3277366464&labelColor=282c34&color=181717)](https://music.163.com/#/user/home?id=3277366464)
+[![Weibo](https://img.shields.io/badge/dynamic/json?label=%E5%BE%AE%E5%8D%9A%E5%85%B3%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dweibo%26queryKey%3D7725080699&labelColor=282c34&color=181717&logo=sina-weibo&longCache=true)](https://weibo.com/u/7725080699)
+
 ## About this site
 This is my blog! A collection of my notes, programming projects, and journal entries!
 

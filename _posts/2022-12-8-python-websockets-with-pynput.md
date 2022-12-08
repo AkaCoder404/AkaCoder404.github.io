@@ -8,6 +8,7 @@ tags: [nodejs, websocket, python, asyncio]
 date: '2022-12-08 00:00:00 +0000'
 --- 
 
+TLDR: Learn how to implement a simple websocket server-client application that takes pynput data and sends it to a client
 
 # Programing Python WebSockets
 ![](https://s2.loli.net/2022/12/08/lPGI51JaYgirmLo.png)
@@ -204,7 +205,7 @@ function App() {
 export default App;
 ```
 
-`socket.addEventListener('open', function (event) {` occurs is activated wehn a connection is initiated. Again, we see the client send a "first connection" message to the server. There are better ways of giving specific ids to clients (for server to differentiate), but I did not implement it in this simple setup. Then the `socket.addEventListener("message", ({ data })` function handles incoming messages from the server. Often, we can use a simple switch statement to handle different types of messages from the server, perhaps to update different parts of the webpage. There is also a button that sends a message to the server to show that the conncetion is full-duplex (both ways).
+`socket.addEventListener('open', function (event) {` is activated wehn a connection is initiated. Again, we see the client send a "first connection" message to the server. There are better ways of giving specific ids to clients (for server to differentiate), but I did not implement it in this simple setup. Then the `socket.addEventListener("message", ({ data })` function handles incoming messages from the server. Often, we can use a simple switch statement to handle different types of messages from the server, perhaps to update different parts of the webpage. There is also a button that sends a message to the server to show that the conncetion is full-duplex (both ways).
 
 
 ### Websocket.py
@@ -270,9 +271,11 @@ Here we introduce `asyncio`, which is quite complex in itself. In general, it is
 
 In the `handler` function, in short, the flow of data is pretty much one-directional. `hardware.py` collects data, sends it to the server, and the server distributes it to the correct client. In order to do this, we have to correctly "id" the connections, so we know who to send the data to. I used a python `dict` to store two websocket conncetions, one from react client, and one from `hardware`. Thus we can differentiate the two websocket connections, and only send hardware data to the client, but messages from the react client will NOT be transfered to the hardware. 
 
-Let's run all three programs, and see the result! 
+Let's run all three programs, and see the result!
 
-![](https://raw.githubusercontent.com/AkaCoder404/image-cloud/main/picsgo/Screen%20Recording%202022-12-08%20at%204.57.30%20PM.mov)
+![](https://s2.loli.net/2022/12/08/dXrkRIoe6YnjWwb.gif)
+
+We can see everything works at expected.    
 
 ## Conclusion
 

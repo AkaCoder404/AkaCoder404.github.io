@@ -1,3 +1,14 @@
+---
+layout: post
+title:  “Python Websocket to Serve live Pynput Data"
+categories:
+    - Software Development
+    - 
+tags: [nodejs, websocket, python, asyncio]
+date: '2022-12-08 00:00:00 +0000'
+--- 
+
+
 # Programing Python WebSockets
 ![](https://s2.loli.net/2022/12/08/lPGI51JaYgirmLo.png)
 

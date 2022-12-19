@@ -3,7 +3,6 @@ layout: post
 title:  “Python Websocket to Serve live Pynput Data"
 categories:
     - Software Development
-    - 
 tags: [nodejs, websocket, python, asyncio]
 date: '2022-12-08 00:00:00 +0000'
 --- 

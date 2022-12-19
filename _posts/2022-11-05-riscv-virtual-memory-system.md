@@ -30,14 +30,31 @@ RISCV has three popular memory management modes. These are the Sv32, Sv39, and S
 Paging is a system by which a piece of hardware, commonly known as MMU (memory management unit), that translates virtual addresses into physical addresses. The translation is performed by first reading a privileged register called the SATP (Supervisor Address Translation and Protection register). This register turns the MMU on/off, sets the address space identifier, and sets the physical memory address where the first page table can be found. It's quite important! 
 
 Thus, the paging process converts a program's own virtual addresses to physical addresses.
+## Satp Register
+We just mentionde the SATP register, so how what does it do exactly?
+
+All translations begin at the Supervisor Address Translation and Protection (SATP) register. We can see that the PPN (physical page number) is a 44-bit value. However, this value has been shifted right by 12 bits before being stored. This essentially divides the actual number by 4096 ($2^{12}=4,096$). Therefore, the actual address is `PPN << 12`.
+
+![](https://s2.loli.net/2022/12/19/DOYGT7Hl9EPFCkR.png)
+
 ## Virtual Address
-## Page Table
+The Sv39 virtual address contains three 9-bit indices. Since $2^9 = 512$ , each table contains exaclty 512 entries, and each entry is exactly 8-bytes (64-bits) as shown below. The Sv39 virtual address contains VPN[x]. The VPN stands for "virtual page number", which is essentially an index into an array of 512, 8 byte entries. So, instead of having the virtual address directly translate into a physical address, the MMU goes through a series of tables. With the Sv39 system, we can have one to three levels. Each level contains a table of 512, 8 byte entries.
+
+![](https://s2.loli.net/2022/12/19/HCTMtOVfhjn7gK8.png)
+
 ## Physical Address
-## SATP Registers
+The physical address is actually 56-bits. Therefore, a 39-bit virtual address can translate into a 56-bit physical address. Obviously, this allows us to map the same virtual address to a different physical address--much like how we will map addresses when creating user processes. The physical address is formed by taking PPN[2:0] and placing them into the following format. Laslty, the page offset is directly copied from the virtual address into the physical address.
+
+![](https://s2.loli.net/2022/12/19/5CASLgEmcdKfhnH.png)
+
+## Page Table and Table Entries 
+A table entry is written by the operating system to control how the MMU works. 
+![](https://s2.loli.net/2022/12/19/O4FzP9Wp3MXBQmx.png)
+
 ## Structure
+Now lets see how everything comes together, below is the Sv39 paging system in RISCV. 
 ![3 Layer](https://ucore-rv-64.github.io/uCore-RV-64-doc/_images/sv39-full.png)
-## Translating a Virtual Address
-## Page Faults
+
 
 # One Level, Two Level, and MultiLevel Paging
 After being introduced to the Sv39 architecture, lets understand more about the paging system. Here we discuss three different paging architectures. 

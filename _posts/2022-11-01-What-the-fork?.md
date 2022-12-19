@@ -115,6 +115,27 @@ Child Process i=2, pid=13548, parent pid=1
 Which was not what we expected to see.
 
 ### Problem 3
+How many child processes are created by fork?
+```cpp
+int main() {
+    if (fork() && fork() || fork() && fork() || fork() && fork() && fork()) {
+        printf("A\n");
+    }
+    return 0;
+}
+```
+### Problem 4
+How many child processes are created by fork? Try with `print("A")` instead, see what happens. Why?
+```cpp
+int main() {
+    for (int i = 0; i < 2; i++) {
+        if (fork() || (fork() && fork()) || !fork()) {
+            printf("A\n");
+        }
+    }
+}
+```
+### Problem 5
 How many child process are created by fork?
 ```cpp
 int main() {  
@@ -130,7 +151,6 @@ int main() {
     }   
 }
 ```
-Answer in the comments!
 
 ## Related Sources
 - [Orphan and Zombie Process](https://www.scaler.com/topics/operating-system/zombie-and-orphan-process-in-os/)

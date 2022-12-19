@@ -103,10 +103,5 @@ This idea can be extented to three level paging.
 ## Three Level Paging
 Sv39 is a three level paging architecture. Instead of repeating, lets just analyze why we should use a multi-level paging architecture. 
 
-
-
-# Questions
-
-
-
-Thanks for reading, hope you learned something!.
+## Conclusion
+Thanks for reading, hope you learned something!

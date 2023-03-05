@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Python Websocket to Serve live Pynput Data"
+title:  "Python Websocket to Serve live Pynput Data"
 categories:
     - Software Development
 tags: [nodejs, websocket, python, asyncio]

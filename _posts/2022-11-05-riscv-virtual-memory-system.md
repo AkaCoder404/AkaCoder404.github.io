@@ -37,6 +37,8 @@ All translations begin at the Supervisor Address Translation and Protection (SAT
 
 ![](https://s2.loli.net/2022/12/19/DOYGT7Hl9EPFCkR.png)
 
+The ASID, or Address Space Identifier is used to reduce context switching overhead. 
+
 ## Virtual Address
 The Sv39 virtual address contains three 9-bit indices. Since $2^9 = 512$ , each table contains exaclty 512 entries, and each entry is exactly 8-bytes (64-bits) as shown below. The Sv39 virtual address contains VPN[x]. The VPN stands for "virtual page number", which is essentially an index into an array of 512, 8 byte entries. So, instead of having the virtual address directly translate into a physical address, the MMU goes through a series of tables. With the Sv39 system, we can have one to three levels. Each level contains a table of 512, 8 byte entries.
 
@@ -48,13 +50,14 @@ The physical address is actually 56-bits. Therefore, a 39-bit virtual address ca
 ![](https://s2.loli.net/2022/12/19/5CASLgEmcdKfhnH.png)
 
 ## Page Table and Table Entries 
-A table entry is written by the operating system to control how the MMU works. 
+A table entry is written by the operating system to control how the MMU works. Notice how the length of the physical page address, {PPN[2], PPN[1], PPN[0]} is the same length as in the physical address.
 ![](https://s2.loli.net/2022/12/19/O4FzP9Wp3MXBQmx.png)
 
 ## Structure
 Now lets see how everything comes together, below is the Sv39 paging system in RISCV. 
 ![3 Layer](https://ucore-rv-64.github.io/uCore-RV-64-doc/_images/sv39-full.png)
 
+We can see that the first page table starts at the SATP address, and the VPN[2], VPN[1], VPN[0] labeled L2, L1, L0 respectively are used as index for each table layer. We also see how the offset in the virtual address is directly used for the physical address.
 
 # One Level, Two Level, and MultiLevel Paging
 After being introduced to the Sv39 architecture, lets understand more about the paging system. Here we discuss three different paging architectures. 
